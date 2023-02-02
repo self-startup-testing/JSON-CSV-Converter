@@ -7,13 +7,27 @@
     <title>JSON-CSV-Converter</title>
 </head>
 <body>
+    <!--Summary of UI elements 
+        1. [User Input JSON text] text box -> textarea
+        2. [convert to CSV] button -> button
+    -->
     <h1>JSON-CSV-Converter</h1>
     <div>
-        
-        <textarea></textarea>
+        <form>
+            <label for="string_to_convert">Paste JSON/CSV string in text field below:</label>
+            <br/>
+            <textarea id="input_field" name="string_to_convert">{}</textarea>
+            <br/>
+            <input type="button" value="Convert" />
+        </form>
+    </div>
+    <div>
+        <p name="converted_string">Converted</p>
+        <textarea id="output_field" name="converted_string"></textarea>
     </div>
     
-    <noscript>Sorry, your browser may not support JavaScript! orJavaScript is disabled in your browser </noscript>  
+    <noscript>Sorry, your browser may not support JavaScript!
+        or JavaScript is disabled in your browser </noscript>  
     <script src="index.js"></script>
 </body>
 </html>
